@@ -1,0 +1,8 @@
+###this is my command to crack the salted hash password after findind the salt
+ hashcat -m 120  -a 0 -o output1.txt password_salted rockyou.txt
+
+
+### This is my command to find salted hash for the 5 length password
+hashcat -m 100 -a 6 -o output.txt password numeric_dict_5.txt ?d?d?d?d?d
+
+
